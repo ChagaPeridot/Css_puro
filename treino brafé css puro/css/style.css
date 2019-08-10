@@ -1,0 +1,89 @@
+/* Reset */
+
+body, h1, h2, h3, p, ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: georgia, serif;
+	color: #252525;
+}
+
+
+/* Menu */
+
+
+.menu {
+	background: #252525;
+	padding: 20px 0;
+}
+
+.menu-container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu-container::after, menu-container::before {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+a.menu-logo {
+	display: block;
+	float: left;
+	margin-left: 10px;
+}
+
+.menu-nav{
+	float: right;
+	margin-right: 10px;
+
+}
+
+
+.menu-nav li{
+	display: inline-block;
+}
+
+.menu-nav a{
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.125em;
+}
+
+
+/* Intro site */
+
+.titulo {
+	background: url("../img/bg-intro.jpg") no-repeat center center;  /* background imagem, não vai se repetir e sempre centralizado*/
+	background-size: cover;                   /* define que o background vá ficar sempre 100% */
+	padding-bottom: 150px;                       /*padding para baixo*/
+	padding-top: 150px;                         /*padding para cima*/
+	text-align: center;                        /*centralizar o texto*/
+	color: #fff;
+}
+
+.titulo h1{
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+
+.titulo h1::after {
+	content: "";
+	display: block;
+	background: #fff;
+	width: 20px;
+	height: 4px;
+	margin: 10px auto;
+}
+
+.titulo p{
+	font-style: italic;
+	font-size: 1.125em;
+}
